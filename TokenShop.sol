@@ -1,4 +1,4 @@
-//In this contract, users can exchange Ether (ETH) for a custom token,and this contract uses Chainlink price feed to get the price of ETH in USD,
+//In this contract, users can exchange Ether (ETH) for a custom token,and this contract uses Chainlink price feed to get the price of ETH in USD.
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.21;
 
