@@ -1,3 +1,4 @@
+//This contract code is made without use of OpenZeppelin.
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.23;
 
