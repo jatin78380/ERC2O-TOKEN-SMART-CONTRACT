@@ -1,9 +1,23 @@
-//This contract code uses the openzeppelin-contracts library.
+//This contract code uses the openzeppelin-contracts library,where we created the ERC20 token with the name RESILIENT and the symbol RSL,and added the MINTER_ROLE to the contract.
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.23;
+pragma solidity 0.8.21;
+
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-contract OPENERC20 is ERC20{
-    constructor(uint256 initialSupply) ERC20("Resilient", "RSL")  {
-        _mint(msg.sender,initialSupply);
+import "@openzeppelin/contracts/access/AccessControl.sol";
+
+contract OPENERC20 is ERC20, AccessControl {
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+
+    constructor() ERC20("Resilient", "RSL") {
+        _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
+        _grantRole(MINTER_ROLE, msg.sender);
     }
+
+    function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+        _mint(to, amount);
+    }
+
+    function decimals() public pure override returns (uint8) {
+        return 2;
+    }    
 }
