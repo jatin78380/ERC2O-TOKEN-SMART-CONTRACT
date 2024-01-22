@@ -12,12 +12,12 @@ interface IERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
- contract ERC20 is IERC20{
+ contract Erc20 is IERC20{
 
   string public name="Resilient"; //name of the token
   string public symbol="RSL"; //symbol of the token
   uint public decimal=0; 
-  address public founder;//initially  will have the total supply
+  address public founder;//initially this will have the total supply
   mapping(address=>uint) public balances; //information of balance of each address
   uint public totalSupply;
   mapping(address=>mapping(address=>uint)) allowed;
