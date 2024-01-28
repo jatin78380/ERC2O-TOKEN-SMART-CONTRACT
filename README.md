@@ -5,6 +5,9 @@ This project consists of two Solidity files, `ERC20.sol` and `OPENERC20.sol`, bo
 
 ## ERC-20 Token
 
+![image](https://github.com/jatin78380/ERC2O-TOKEN-SMART-CONTRACT/assets/149093745/fedfd731-4013-402a-abf9-0f2707c80790)
+
+
 ### File: `ERC20.sol`
 
 This Solidity file contains the implementation of a basic ERC-20 token. It includes the standard functions and events required for ERC-20 compliance. The token is designed to be deployed on the Ethereum blockchain.
