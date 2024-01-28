@@ -5,6 +5,9 @@ This project consists of two Solidity files, `ERC20.sol` and `OPENERC20.sol`, bo
 
 ## ERC-20 Token
 
+![image](https://github.com/jatin78380/ERC2O-TOKEN-SMART-CONTRACT/assets/149093745/ac16442d-6832-4d25-a8b8-3dbc9f64e1fb)
+
+
 ![image](https://github.com/jatin78380/ERC2O-TOKEN-SMART-CONTRACT/assets/149093745/fedfd731-4013-402a-abf9-0f2707c80790)
 
 
